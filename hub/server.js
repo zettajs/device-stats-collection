@@ -5,8 +5,8 @@ var AutoScout = require('zetta-auto-scout');
 
 var hub = zetta()
   .name('detroit')
-  .use(LED)
-  .use(AutoScout, 'led', LED, 1)
+//  .use(LED)
+//  .use(AutoScout, 'led', LED, 1)
   .use(AutoScout, 'led', LED, 2)
   .use(AutoScout, 'photocell', SineWave, 1)
   .use(AutoScout, 'photocell', SineWave, 2)
