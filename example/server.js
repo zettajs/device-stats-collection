@@ -2,17 +2,17 @@ var zetta = require('zetta');
 
 var KairosDbCollector = require('../collection-kairosdb');
 var kairos = new KairosDbCollector({
-  host: 'ec2-52-0-199-129.compute-1.amazonaws.com',
-  port: 8080
+  host: process.env.KAIROS_HOST,
+  port: process.env.KAIROS_PORT || 8080
 });
 
 var InfluxDbCollector = require('../collection-influxdb');
 var influx = new InfluxDbCollector({
-  host: 'ec2-52-0-199-129.compute-1.amazonaws.com',
-  port: 8086,
-  username: 'zetta',
-  password: '12345',
-  database: 'test-db'
+  host: process.env.INFLUX_HOST,
+  port: process.env.INFLUX_PORT || 8086,
+  username: process.env.INFLUX_USER,
+  password: process.env.INFLUX_PASSWORD,
+  database: process.env.INFLUX_DATABASE
 });
 
 var hub = zetta()
