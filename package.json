@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/zettajs/device-stats-collection",
   "dependencies": {
-    "zetta": "^0.19.0",
-    "zetta-device-data-influxdb": "^0.1.1",
-    "zetta-device-data-kairosdb": "^0.1.0"
+    "zetta": "^0.20.0",
+    "zetta-device-data-influxdb": "^0.4.0",
+    "zetta-device-data-kairosdb": "^0.4.0"
   }
 }
