@@ -1,0 +1,25 @@
+{
+  "name": "device-stats-collection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zettajs/device-stats-collection.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zettajs/device-stats-collection/issues"
+  },
+  "homepage": "https://github.com/zettajs/device-stats-collection",
+  "dependencies": {
+    "zetta": "^0.19.0",
+    "zetta-device-data-influxdb": "^0.1.1",
+    "zetta-device-data-kairosdb": "^0.1.0"
+  }
+}
